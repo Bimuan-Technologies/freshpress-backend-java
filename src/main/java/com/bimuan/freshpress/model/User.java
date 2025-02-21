@@ -35,9 +35,9 @@ public class User implements UserDetails {
     private boolean enabled;
     private String profileImageUrl;
     private String preferredLanguage;
-    @Column(precision = 10, scale = 8)
+    @Column(precision = 10)
     private Double latitude;
-    @Column(precision = 11, scale = 8)
+    @Column(precision = 11)
     private Double longitude;
 
     private LocalDateTime createdAt;

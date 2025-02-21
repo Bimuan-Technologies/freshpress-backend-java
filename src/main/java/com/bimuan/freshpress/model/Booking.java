@@ -30,6 +30,10 @@ public class Booking {
         @JoinColumn(name = "service_id", referencedColumnName = "serviceId")
         private Service service;
 
+        @ManyToOne
+        @JoinColumn(name = "dispatch_id", referencedColumnName = "dispatchId")
+        private Dispatch dispatch;
+
         private LocalDateTime bookingDate;
         private LocalDateTime scheduleDate;
         private int duration;

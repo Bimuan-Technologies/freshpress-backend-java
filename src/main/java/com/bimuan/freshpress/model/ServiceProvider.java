@@ -2,9 +2,15 @@ package com.bimuan.freshpress.model;
 
 import com.bimuan.freshpress.enums.Enums;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "service_providers")
 public class ServiceProvider {
@@ -36,5 +42,8 @@ public class ServiceProvider {
 
     @OneToMany(mappedBy = "serviceProvider")
     private List<Review> reviews;
+
+    @OneToMany(mappedBy = "serviceProvider", cascade = CascadeType.ALL)
+    private List<Service> services;
 
 }

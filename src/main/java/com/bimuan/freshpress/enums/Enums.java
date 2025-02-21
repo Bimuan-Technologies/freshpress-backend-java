@@ -9,8 +9,6 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import static com.bimuan.freshpress.enums.Enums.Permission.ADMIN_DELETE;
-
 public class Enums {
 //    public enum UserType{
 //        CUSTOMER,
@@ -21,7 +19,7 @@ public class Enums {
     public enum ServiceType {
         HOME_CLEANING,
         OFFICE_CLEANING,
-        WASH_AND_FOLD,
+        LAUNDRY_WASH_FOLD,
         DRY_CLEANING,
         ALTERATIONS
     }
